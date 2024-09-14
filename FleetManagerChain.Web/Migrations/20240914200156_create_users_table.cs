@@ -5,7 +5,7 @@
 namespace FleetManagerChain.Web.Migrations
 {
     /// <inheritdoc />
-    public partial class creando_users : Migration
+    public partial class create_users_table : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

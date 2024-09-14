@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FleetManagerChain.Web.Migrations
 {
     [DbContext(typeof(MasterContext))]
-    [Migration("20240914164608_creando_users")]
-    partial class creando_users
+    [Migration("20240914200156_create_users_table")]
+    partial class create_users_table
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
