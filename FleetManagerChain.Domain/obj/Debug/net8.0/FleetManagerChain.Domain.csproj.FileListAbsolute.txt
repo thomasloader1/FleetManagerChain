@@ -10,3 +10,15 @@ C:\Users\admin\Documents\FleetManagerChain\FleetManagerChain\FleetManagerChain.D
 C:\Users\admin\Documents\FleetManagerChain\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\refint\FleetManagerChain.Domain.dll
 C:\Users\admin\Documents\FleetManagerChain\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.pdb
 C:\Users\admin\Documents\FleetManagerChain\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\ref\FleetManagerChain.Domain.dll
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\bin\Debug\net8.0\FleetManagerChain.Domain.deps.json
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\bin\Debug\net8.0\FleetManagerChain.Domain.dll
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\bin\Debug\net8.0\FleetManagerChain.Domain.pdb
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.AssemblyInfoInputs.cache
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.AssemblyInfo.cs
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.csproj.CoreCompileInputs.cache
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.sourcelink.json
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.dll
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\refint\FleetManagerChain.Domain.dll
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\FleetManagerChain.Domain.pdb
+C:\Users\talkt\source\repos\FleetManagerChain\FleetManagerChain.Domain\obj\Debug\net8.0\ref\FleetManagerChain.Domain.dll

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj": {}
+    "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj": {
+    "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj",
         "projectName": "FleetManagerChain.Domain",
-        "projectPath": "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Domain\\obj\\",
+        "projectPath": "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj",
+        "packagesPath": "C:\\Users\\talkt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\talkt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -69,20 +69,20 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj": {
+    "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj",
+        "projectUniqueName": "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj",
         "projectName": "FleetManagerChain.Web",
-        "projectPath": "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Web\\obj\\",
+        "projectPath": "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Web\\FleetManagerChain.Web.csproj",
+        "packagesPath": "C:\\Users\\talkt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\talkt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\FleetManagerChain\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj"
+              "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj": {
+                "projectPath": "C:\\Users\\talkt\\source\\repos\\FleetManagerChain\\FleetManagerChain.Domain\\FleetManagerChain.Domain.csproj"
               }
             }
           }
