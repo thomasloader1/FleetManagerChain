@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using FleetManagerChain.Domain.Enums;
 
 namespace FleetManagerChain.Domain
 {
@@ -39,7 +40,7 @@ namespace FleetManagerChain.Domain
         public Travel Travel { get; set; }    // Relación Many-to-One con Viaje
 
         [ForeignKey("ZoneId")]
-        public Zone Zone { get; set; }   // Relación Many-to-One con Zona
+        public Zone Zone { get; set; } 
 
     }
 }
