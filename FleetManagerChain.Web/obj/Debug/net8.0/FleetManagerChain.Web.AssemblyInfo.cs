@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FleetManagerChain.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94b630e84da357e2228eac9ac2964767cc732ba5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fc9b039046702f296d2b81357a1d4ef5a3ed09f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FleetManagerChain.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FleetManagerChain.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
