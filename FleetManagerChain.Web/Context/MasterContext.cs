@@ -103,4 +103,6 @@ public partial class MasterContext : DbContext
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 
 public DbSet<FleetManagerChain.Domain.Order> Order { get; set; } = default!;
+
+public DbSet<FleetManagerChain.Domain.Travel> Travel { get; set; } = default!;
 }
