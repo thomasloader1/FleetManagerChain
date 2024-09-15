@@ -90,6 +90,14 @@ public partial class MasterContext : DbContext
             modelTravel.HasOne(t => t.Vehicle);
         });
 
+        modelBuilder.Entity<Zone>(modelZone =>
+        {
+            modelZone.HasKey(z => z.Id);
+            // Configuración de propiedades
+            modelZone.Property(z => z.Id).UseIdentityColumn().ValueGeneratedOnAdd(); 
+            modelZone.Property(z => z.Lat);
+            modelZone.Property(z => z.Lon); 
+        });
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
