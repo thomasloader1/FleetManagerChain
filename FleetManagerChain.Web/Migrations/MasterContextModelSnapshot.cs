@@ -50,7 +50,7 @@ namespace FleetManagerChain.Web.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("FleetManagerChain.Domain.Vehicle", b =>
@@ -99,7 +99,7 @@ namespace FleetManagerChain.Web.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Vehicles");
+                    b.ToTable("Vehicles", (string)null);
                 });
 
             modelBuilder.Entity("FleetManagerChain.Domain.Vehicle", b =>

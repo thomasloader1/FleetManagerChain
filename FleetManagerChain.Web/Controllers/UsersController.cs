@@ -54,7 +54,7 @@ namespace FleetManagerChain.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Username,Email,Password,Role,IsActive")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Username,Email,Password,ConfirmPassword,Role,IsActive")] User user)
         {
             if (ModelState.IsValid)
             {

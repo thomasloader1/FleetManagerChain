@@ -16,8 +16,8 @@ public partial class MasterContext : DbContext
     {
     }
 
-    public DbSet<User> Users { get; set; }
-   public DbSet<Vehicle> Vehicles { get; set; }
+   public virtual DbSet<User> Users { get; set; }
+   public virtual DbSet<Vehicle> Vehicles { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -26,7 +26,6 @@ public partial class MasterContext : DbContext
 
         modelBuilder.Entity<User>(modelUser =>
         {
-
             modelUser.HasKey(col => col.Id);
             // Configuración de las propiedades
             modelUser.Property(col => col.Id).UseIdentityColumn().ValueGeneratedOnAdd(); // El valor se generará al agregarlo
@@ -38,7 +37,9 @@ public partial class MasterContext : DbContext
  
         });
 
-       modelBuilder.Entity<Vehicle>(modelVehicle =>
+        modelBuilder.Entity<User>().ToTable("Users");
+
+        modelBuilder.Entity<Vehicle>(modelVehicle =>
         {
 
             modelVehicle.HasKey(col => col.Id);
@@ -57,6 +58,9 @@ public partial class MasterContext : DbContext
             modelVehicle.Property(col => col.MaxKm);
 
         });
+
+        modelBuilder.Entity<Vehicle>().ToTable("Vehicles");
+
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
