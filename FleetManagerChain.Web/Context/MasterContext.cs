@@ -57,6 +57,26 @@ public partial class MasterContext : DbContext
             modelVehicle.Property(col => col.MaxKm);
 
         });
+
+        modelBuilder.Entity<Order>(modelOrder =>
+        {
+            modelOrder.HasKey(col => col.Id);
+            modelOrder.Property(col => col.Id).UseIdentityColumn().ValueGeneratedOnAdd(); // El valor se genera al agregarlo
+            // Configuración de propiedades
+            modelOrder.Property(col => col.Name);
+            modelOrder.Property(col => col.Type);
+            modelOrder.Property(col => col.Code);
+            modelOrder.Property(col => col.Size);
+            modelOrder.Property(col => col.Weight);
+            modelOrder.Property(col => col.Date);
+            modelOrder.Property(col => col.Distance);
+            modelOrder.Property(col => col.DistanceWithTraffic);
+            modelOrder.Property(col => col.TimeWithTraffic);
+            modelOrder.Property(col => col.State);
+            //Relaciones con viaje y zona
+            modelOrder.HasOne(o => o.Travel);
+            modelOrder.HasOne(o => o.Zone);
+        });
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
