@@ -37,16 +37,12 @@ public partial class MasterContext : DbContext
  
         });
 
-        modelBuilder.Entity<User>().ToTable("Users");
-
         modelBuilder.Entity<Vehicle>(modelVehicle =>
         {
 
             modelVehicle.HasKey(col => col.Id);
             // Configuración de las propiedades
             modelVehicle.Property(col => col.Id).UseIdentityColumn().ValueGeneratedOnAdd(); // El valor se genera al agregarlo
-            // Relación con la entidad User (Foreign Key)
-            modelVehicle.HasOne(v => v.User);
             modelVehicle.Property(col => col.ModelName);
             modelVehicle.Property(col => col.Brand);
             modelVehicle.Property(col => col.Type);
@@ -56,12 +52,57 @@ public partial class MasterContext : DbContext
             modelVehicle.Property(col => col.Capacity);
             modelVehicle.Property(col => col.Resistence);
             modelVehicle.Property(col => col.MaxKm);
+            // Relación con la entidad usuario
+            modelVehicle.HasOne(v => v.User);
 
         });
 
-        modelBuilder.Entity<Vehicle>().ToTable("Vehicles");
+        modelBuilder.Entity<Order>(modelOrder =>
+        {
+            modelOrder.HasKey(col => col.Id);
+            modelOrder.Property(col => col.Id).UseIdentityColumn().ValueGeneratedOnAdd(); // El valor se genera al agregarlo
+            // Configuración de propiedades
+            modelOrder.Property(col => col.Name);
+            modelOrder.Property(col => col.Type);
+            modelOrder.Property(col => col.Code);
+            modelOrder.Property(col => col.Size);
+            modelOrder.Property(col => col.Weight);
+            modelOrder.Property(col => col.Date);
+            modelOrder.Property(col => col.Distance);
+            modelOrder.Property(col => col.DistanceWithTraffic);
+            modelOrder.Property(col => col.TimeWithTraffic);
+            modelOrder.Property(col => col.State);
+            //Relaciones con viaje y zona
+            modelOrder.HasOne(o => o.Travel);
+            modelOrder.HasOne(o => o.Zone);
+        });
+
+        modelBuilder.Entity<Travel>(modelTravel =>
+        {
+            modelTravel.HasKey(col => col.Id);
+            modelTravel.Property(col => col.Id).UseIdentityColumn().ValueGeneratedOnAdd();
+            // Configuración de propiedades
+            modelTravel.Property(t => t.ZoneId);
+            modelTravel.Property(t => t.Date);
+            //Relaciones con orden y vehiculo
+            modelTravel.HasMany(t => t.Orders);
+            modelTravel.HasOne(t => t.Vehicle);
+        });
+
+        modelBuilder.Entity<Zone>(modelZone =>
+        {
+            modelZone.HasKey(z => z.Id);
+            // Configuración de propiedades
+            modelZone.Property(z => z.Id).UseIdentityColumn().ValueGeneratedOnAdd(); 
+            modelZone.Property(z => z.Lat);
+            modelZone.Property(z => z.Lon); 
+        });
 
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+public DbSet<FleetManagerChain.Domain.Order> Order { get; set; } = default!;
+
+public DbSet<FleetManagerChain.Domain.Travel> Travel { get; set; } = default!;
 }

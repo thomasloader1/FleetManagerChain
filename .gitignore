@@ -1,2 +1,6 @@
 .vs
-.env
+FleetManagerChain.Web/.env
+FleetManagerChain.Domain/bin/Debug/*
+FleetManagerChain.Domain/obj/Debug/*
+FleetManagerChain.Web/bin/Debug/*
+FleetManagerChain.Web/obj/Debug/*

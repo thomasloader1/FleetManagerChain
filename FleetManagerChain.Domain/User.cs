@@ -21,7 +21,7 @@ namespace FleetManagerChain.Domain
         public string Password { get; set; }
 
         [NotMapped] // This will not be part of the database model
-        public string ConfirmPassword { get; set; }
+        public string? ConfirmPassword { get; set; }
 
         public string Role { get; set; }
 
